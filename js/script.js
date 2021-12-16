@@ -35,7 +35,7 @@ let quotes = [
 //Created a function that takes an array as a param, in this case the Quotes array, and returns a random object within said array.
 function getRandomQuote(arr) {
   let randomNum = arr[Math.floor(Math.random() * arr.length)];
-  return randomNum;
+  return randomNum[quotes];
 }
 //console.log(getRandomQuote(quotes)); -> Random Object successfully shown in the console when you hit the refresh in the browser
 
