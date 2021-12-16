@@ -29,13 +29,15 @@ let quotes = [
     quote: 'Life is what happens when you\'re busy making other plans.',
     source: '-John Lennon'
   }];
+//console.log('Quote Array: ', quotes); -> Quotes successfully shown in the console as an array of 5 object w/ 2 key/value pairs
 
 
-/***
- * `getRandomQuote` function
-***/
-
-
+//Created a function that takes an array as a param, in this case the Quotes array, and returns a random object within said array.
+function getRandomQuote(arr) {
+  let randomNum = arr[Math.floor(Math.random() * arr.length)];
+  return randomNum;
+}
+//console.log(getRandomQuote(quotes)); -> Random Object successfully shown in the console when you hit the refresh in the browser
 
 /***
  * `printQuote` function
