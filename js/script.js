@@ -49,16 +49,12 @@ function printQuote() {
   `;
   //console.log('html: ', html); //-> Successfully renders the objects as text
 
-  if (quotes.hasOwnProperty('citation')) {
-    html += `<span class="citation">${retriveRandomQuote.citation}</span>
-    </p>
-    `;
-    console.log('Citation is here: ', typeof (html));
-    //return html;
+  if (retriveRandomQuote.indexOf('citation') > -1) {
+    html += `<span class="citation">${retriveRandomQuote.citation}</span></p>`;
+    console.log('I contain a citation: ', html);
   } else {
     html += `</p>`;
-    console.log('Citation is NOT here: ', typeof (html));
-    //return html;
+    console.log('I DON\'T contain a citation', html);
   }
 }
 
