@@ -48,6 +48,18 @@ function printQuote() {
   <p class = 'source'>${retriveRandomQuote.source}
   `;
   //console.log('html: ', html); //-> Successfully renders the objects as text
+
+  if (quotes.hasOwnProperty('citation')) {
+    html += `<span class="citation">${retriveRandomQuote.citation}</span>
+    </p>
+    `;
+    console.log('Citation is here: ', typeof (html));
+    //return html;
+  } else {
+    html += `</p>`;
+    console.log('Citation is NOT here: ', typeof (html));
+    //return html;
+  }
 }
 
 
