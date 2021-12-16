@@ -3,10 +3,6 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-// For assistance: 
-// Check the "Project Resources" section of the project instructions
-// Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
-
 //Created a Array of 5 objects which hold 2 keys: A Quote string, and a Source String
 let quotes = [
   {
@@ -34,10 +30,10 @@ let quotes = [
 
 //Created a function that takes an array as a param, in this case the Quotes array, and returns a random object within said array.
 function getRandomQuote(arr) {
-  let randomNum = arr[Math.floor(Math.random() * arr.length)];
-  return randomNum[quotes];
+  let randomQuote = arr[Math.floor(Math.random() * arr.length)];
+  //console.log('Random Number: ', randomQuote); -> Successfully rendered a random quote object to the console.
+  return randomQuote;
 }
-//console.log(getRandomQuote(quotes)); -> Random Object successfully shown in the console when you hit the refresh in the browser
 
 /***
  * `printQuote` function
